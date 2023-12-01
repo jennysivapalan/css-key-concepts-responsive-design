@@ -37,7 +37,7 @@ h2 {
 .card {
   display: flex;
   flex-direction: column;
-  border: 1px solid purple;
+  border: 1px solid var(--teal);
   padding: 0.625rem;
   margin: 0.625rem;
 }
@@ -133,5 +133,8 @@ h2 {
   body {
     background: var(--dark);
     color: var(--camel);
+  }
+  .card {
+    border: 1px solid var(--coral);
   }
 }
