@@ -21,6 +21,10 @@ h2 {
   font-size: 1.75rem;
 }
 
+.description {
+  display: none;
+}
+
 .card-container {
   border: 1px solid red;
   display: flex;
@@ -55,6 +59,15 @@ h2 {
 
 .pet-pic {
   width: 15.6rem;
+}
+
+@media (min-width: 481px) {
+  body {
+    background: green;
+  }
+  .description {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 700px) {
