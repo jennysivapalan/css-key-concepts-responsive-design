@@ -11,6 +11,7 @@
 
 body {
   background-color: var(--light);
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
