@@ -4,8 +4,9 @@
   --light: #e7ecef;
   --dark: #272932;
   --camel: #d8a47f;
-  --large-cat-font: 1.5rem;
   --small-cat-font: 1rem;
+  --large-cat-font: 1.5rem;
+  --very-large-cat-font: 2rem;
 }
 
 body {
@@ -57,6 +58,9 @@ h2 {
 }
 
 @media screen and (min-width: 700px) {
+  body {
+    background-color: var(--coral);
+  }
   h1 {
     font-size: 3.25rem;
   }
@@ -78,5 +82,33 @@ h2 {
 
   .birth-year {
     font-size: var(--large-cat-font);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: var(--teal);
+  }
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  h2 {
+    font-size: 3.25rem;
+  }
+  .cat-name {
+    font-size: 2.5rem;
+  }
+
+  .species {
+    font-size: var(--very-large-cat-font);
+  }
+
+  .fav-foods {
+    font-size: var(--very-large-cat-font);
+  }
+
+  .birth-year {
+    font-size: var(--very-large-cat-font);
   }
 }
