@@ -128,3 +128,10 @@ h2 {
     font-size: var(--very-large-cat-font);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark);
+    color: var(--camel);
+  }
+}
