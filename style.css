@@ -26,7 +26,6 @@ h2 {
 }
 
 .card-container {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,6 +35,9 @@ h2 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+
   border: 1px solid purple;
   padding: 0.625rem;
   margin: 0.625rem;
@@ -58,22 +60,19 @@ h2 {
 }
 
 .pet-pic {
-  width: 15.6rem;
+  min-width: 2em;
+  max-width: 20em;
+
+  align-self: center;
 }
 
 @media (min-width: 481px) {
-  body {
-    background: green;
-  }
   .description {
     display: block;
   }
 }
 
 @media screen and (min-width: 700px) {
-  body {
-    background-color: var(--coral);
-  }
   h1 {
     font-size: 3.25rem;
   }
@@ -99,9 +98,6 @@ h2 {
 }
 
 @media screen and (min-width: 1000px) {
-  body {
-    background-color: var(--teal);
-  }
   h1 {
     font-size: 3.75rem;
   }
