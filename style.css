@@ -4,6 +4,8 @@
   --light: #e7ecef;
   --dark: #272932;
   --camel: #d8a47f;
+  --large-cat-font: 1.5rem;
+  --small-cat-font: 1rem;
 }
 
 body {
@@ -14,8 +16,8 @@ h1 {
   font-size: 2.25rem;
 }
 
-h1 {
-  font-size: 1.5rem;
+h2 {
+  font-size: 1.75rem;
 }
 
 .card-container {
@@ -35,21 +37,46 @@ h1 {
 }
 
 .cat-name {
-  font-size: 1.25rem;
+  font-size: var(--small-cat-font);
 }
 
 .species {
-  font-size: 1rem;
+  font-size: var(--small-cat-font);
 }
 
 .fav-foods {
-  font-size: 1rem;
+  font-size: var(--small-cat-font);
 }
 
 .birth-year {
-  font-size: 1rem;
+  font-size: var(--small-cat-font);
 }
 
 .pet-pic {
   width: 15.6rem;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+  .cat-name {
+    font-size: 2rem;
+  }
+
+  .species {
+    font-size: var(--large-cat-font);
+  }
+
+  .fav-foods {
+    font-size: var(--large-cat-font);
+  }
+
+  .birth-year {
+    font-size: var(--large-cat-font);
+  }
 }
